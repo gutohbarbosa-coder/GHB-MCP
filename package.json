@@ -1,0 +1,35 @@
+{
+  "name": "ghb-mcp",
+  "version": "0.1.0-rc.2",
+  "description": "Local read-only MCP for GA4, GTM and Google Ads",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test",
+    "check": "node --check server.js && node --test && node scripts/scan.js"
+  },
+  "files": [
+    "server.js",
+    "src/",
+    "README.md",
+    "SECURITY.md",
+    "CONTRIBUTING.md",
+    "LICENSING.md",
+    "THIRD_PARTY_NOTICES.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "zod": "4.6.7"
+  },
+  "author": "gutohbarbosa-coder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gutohbarbosa-coder/GHB-MCP.git"
+  }
+}
